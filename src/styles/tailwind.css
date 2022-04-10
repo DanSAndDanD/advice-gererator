@@ -13,3 +13,11 @@
 body {
   @apply font-manrope
 }
+
+advice-generator[hidden] {
+  display: none;
+}
+
+advice-generator[big] h2 {
+  font-size: 3rem;
+}
