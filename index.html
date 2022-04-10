@@ -19,15 +19,35 @@
       rel="stylesheet"
     />
 
-    <head src="/src/scripts/index.js"></head>script>
+    <head src="/src/scripts/index.js"></head>
   </head>
-  <body class="bg-dark-grayish-blue h-full">
+  <body class="bg-dark-blue h-full">
     <div class="flex justify-center items-center flex-col h-full p-4">
-      <div class="bg-grayish-blue md:w-1/4 ">
-        <h2 class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut modi quo nesciunt non nam molestiae porro dolores dicta at!
-        </h2>
-        <div></div>
-      </div>
+      <advice-generator class="bg-dark-grayish-blue max-w-md p-6 rounded-xl shadow-xl block">
+        <div>
+          <h3 class="text-center text-xs text-neon-green mb-4">advice #1000</h3>
+          <h2 class="quote text-white font-bold text-center text-lg p-15">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aut modi quo nesciunt non nam molestiae porro dolores dicta at!
+          </h2>
+        </div>
+
+        <div class="max-w-full flex justify-between items-center gap-4 my-6">
+          <div class="border-t border-solid border-grayish-blue w-full"></div>
+          <svg width="50" height="16" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#CEE3E9">
+              <rect width="6" height="16" rx="3"/>
+              <rect x="14" width="6" height="16" rx="3"/>
+            </g>
+          </svg>
+          <div class="border-t border-grayish-blue w-full"></div>
+        </div>
+
+        <div class="relative">
+          <button class="dice-circle bg-neon-green h-12 w-12 flex justify-center items-center rounded-full absolute left-1/2 -translate-x-1/2 hover:scale-110 active:invert transition-all">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" fill="#202733"/></svg>
+          </button>
+        </div>
+
+      </advice-generator>
     </div>
 
     <div class="attribution">
